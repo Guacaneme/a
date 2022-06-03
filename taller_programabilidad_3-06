@@ -1,0 +1,118 @@
+-- DROP TABLE public.tmp_ejercicio;
+
+CREATE TABLE public.tmp_ejercicio (
+	municipio_id bpchar(5) NULL,
+	municipio_nombre varchar(128) NULL,
+	substring text NULL
+);
+
+--DROP table public.tmp_conteo_archivos
+-- 
+create table public.tmp_conteo_archivos ( 
+municipio_id char(5),
+municipio_nombre varchar(128),
+conteo_total integer
+);
+
+
+/* *************************************************************************************** */
+
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05079','BARBOSA','tramitecatastral');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05079','BARBOSA','construccion');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05079','BARBOSA','terreno');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05079','BARBOSA','predio');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05079','BARBOSA','interesados');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05088','BELLO','tramitecatastral');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05088','BELLO','construccion');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05088','BELLO','terreno');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05088','BELLO','predio');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05088','BELLO','interesados');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05212','COPACABANA','tramitecatastral');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05212','COPACABANA','construccion');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05212','COPACABANA','terreno');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05212','COPACABANA','predio');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05212','COPACABANA','interesados');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05308','GIRARDOTA','tramitecatastral');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05308','GIRARDOTA','construccion');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05308','GIRARDOTA','terreno');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05308','GIRARDOTA','predio');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05308','GIRARDOTA','interesados');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05380','LA ESTRELLA','tramitecatastral');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05380','LA ESTRELLA','construccion');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05380','LA ESTRELLA','predio');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05380','LA ESTRELLA','interesados');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05380','LA ESTRELLA','terreno');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05631','SABANETA','tramitecatastral');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05631','SABANETA','construccion');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05631','SABANETA','terreno');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05631','SABANETA','predio');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('05631','SABANETA','interesado');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25019','ALB�N','tramitecatastral');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25019','ALB�N','construccion');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25019','ALB�N','interesado');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25019','ALB�N','predio');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25019','ALB�N','terreno');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25035','ANAPOIMA','tramitecatastral');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25035','ANAPOIMA','construccion');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25035','ANAPOIMA','interesado');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25035','ANAPOIMA','predio');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25035','ANAPOIMA','terreno');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25040','ANOLAIMA','tramitecatastral');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25040','ANOLAIMA','construccion');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25040','ANOLAIMA','interesado');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25040','ANOLAIMA','predio');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25040','ANOLAIMA','terreno');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25053','ARBEL�EZ','tramitecatastral');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25053','ARBEL�EZ','construccion');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25053','ARBEL�EZ','interesado');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25053','ARBEL�EZ','predio');
+INSERT INTO public.tmp_ejercicio (municipio_id,municipio_nombre,substring) VALUES ('25053','ARBEL�EZ','terreno');
+
+/* *************************************************************************************** */
+
+
+-- creaci�n de tabla que tiene un solo municipio por registro y que nos va a permitir
+-- contar el n�mero de registros que aparecen en la tabla tmp_ejercicio
+
+insert into public.tmp_conteo_archivos (municipio_id ,municipio_nombre)
+select distinct municipio_id ,municipio_nombre
+from public.tmp_ejercicio
+conteo_total ;
+
+
+do $$
+declare v_municipio_id char(5);
+declare v_municipio_nombre varchar(128);
+declare v_conteo_total integer;
+
+declare  crsr_tmp_conteo CURSOR FOR 
+	SELECT municipio_id, municipio_nombre FROM public.tmp_ejercicio te ;
+
+begin 
+open crsr_tmp_conteo;
+
+--FETCH crsr_tmp_conteo INTO v_municipio_id, v_municipio_nombre; -- Recorrer 
+	
+   loop
+    -- se posiciona en la siguiente fila del cursor y extrae los datos a 
+   -- las variables indicadas
+       fetch crsr_tmp_conteo INTO v_municipio_id, v_municipio_nombre;
+    -- si no existen mas registros sale del ciclo
+      exit when not found;
+
+    -- build the output
+
+   update   public.tmp_conteo_archivos
+   set conteo_total = conteo_total + 1
+   where municipio_id = v_municipio_id;
+    
+   end loop;
+
+close crsr_tmp_conteo;
+-- Deallocate crsr_tmp_conteo    -- Desasignar memoria en Sybase y algunos otros motores
+
+end ;
+$$;
+
+
+select * from public.tmp_conteo_archivos
