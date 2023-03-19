@@ -5,8 +5,6 @@ CREATE TABLE public.tmp_ejercicio (
 	municipio_nombre varchar(128) NULL,
 	substring text NULL
 );
-
-HOLA ESTE ES MI EJEMPLO PRUEBA DE GIT uwu
-
-
 Estos son cambios en el archivo siu xd
+
+TERCER INTENTO DE CAMBIOS EN EL REPO
