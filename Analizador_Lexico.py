@@ -63,8 +63,6 @@ def main():
     token_list = []
     
     for linea in sys.stdin:
-        if linea == "\n":
-            fila += 1
         fila +=1
         columna = 1
 
